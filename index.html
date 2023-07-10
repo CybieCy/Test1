@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DarkDeleted</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="flex">
+    <div class="container">
+        <div class="user"></div>
+        <form>
+            <h1>DARK</h1>
+            <div class="input">
+              <ion-icon name="person-circle-outline"></ion-icon>
+                <input type="text" required id="Username"  /> 
+                <label>Username</label>
+            </div>
+            <div class="input box">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" required />
+                <label>Password</label>
+            </div>
+            <input class="L_btn" type="submit" onclick="func()" value="Login" />
+        </form method="get">
+        </div>
+    </div>
+    <script>
+      function func(){
+
+var Username = document.getElementById("Username").value;
+
+var password = document.getElementById('password').value;
+
+if (Username == 'Admin' && password == '123456'){
+
+alert("success full 💝")
+
+window.location.assign("3.html")
+}
+else{
+  alert("invalid information");
+  return;
+}
+}
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
